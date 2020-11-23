@@ -179,7 +179,7 @@ start() {
   log_info "Installing $bin to $prefix"
     install "$tmp" "$prefix"
   else
-    log_info "Permissions required for installation to $prefix â alternatively specify a new directory with:"
+    log_info "Permissions required for installation to $prefix Alternatively specify a new directory with:"
     log_info "  $ curl -sf https://gobinaries.com/$pkg@$version | PREFIX=. sh"
     sudo install "$tmp" "$prefix"
   fi
@@ -187,3 +187,5 @@ start() {
   log_info "Installation complete"
   echo
 }
+
+start
